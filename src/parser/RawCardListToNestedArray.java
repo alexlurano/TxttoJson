@@ -42,10 +42,11 @@ public class RawCardListToNestedArray {
 		emptyTemp.add("nonsense");
 		
 			for(int i=0;i<index;i++) {
+				printJob(i+"cardnum");
 				majorDebugger = beautify(rawCards.get(i),i);
 				cleanCardInfo.add(new StringToDataForCards());
 
-				if(fileName.equalsIgnoreCase("cleanminor.txt"))
+	//			if(fileName.equalsIgnoreCase("cleanminor.txt"))
 					cleanCardInfo.get(i).assignValues(majorDebugger);
 				majorDebugger.clear();
 			}
@@ -68,9 +69,7 @@ public class RawCardListToNestedArray {
 		ArrayList<String> dicedCardInfo = new ArrayList<String>();
 		ArrayList<String> completeCardInfo = new ArrayList<String>();
 		String s = rawInfo;
-		printJob(s);
 		s = deleteCppRelics(s);
-		printJob(s);
 		dicedCardInfo = parseOutCommas(s);
 		completeCardInfo = combineInfoInBrackets(dicedCardInfo,'[',']');
 		completeCardInfo = combineInfoInBrackets(completeCardInfo,'"','"');

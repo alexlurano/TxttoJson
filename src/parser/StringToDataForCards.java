@@ -29,6 +29,10 @@ public class StringToDataForCards {
 		if(args.size()<8)
 			return;
 		holdingArray = args;
+		
+		for(int i=0;i<holdingArray.size();i++) { // brackets arent removed in tonestedarray file so snip them here to avoid problems int parsing
+			holdingArray.set(i, holdingArray.get(i).replaceAll("[\\[\\]]", ""));
+		}
 		// sometimes range doesnt exist, ripping out range at start is easier than adding null to array
 		if(holdingArray.size() == 9) {
 			range = Integer.valueOf(holdingArray.get(5));
