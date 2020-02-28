@@ -21,11 +21,960 @@ Speed Slow
 Source SacredSite
 1
 [Land JungleLand Wetland]
-[Elements Water
-Elements Plant]
+[Elements WaterElements Plant]
 Cari Corene
 2 Damage or Remove 1 Blight 
-12long
+11long
+
+
+
+ Minor, "Rouse the Trees and Stones", 1, Speed Slow, Source SacredSite, 1, TargetProperty NoBlight,[Elements Fire, Elements Earth, Elements Plant], "Jorge Ramos","2 Damage Push 1 Explorer ",k
+Minor
+Rouse the Trees and Stones
+1
+Speed Slow
+Source SacredSite
+1
+TargetProperty NoBlight
+[Elements FireElements EarthElements Plant]
+Jorge Ramos
+2 Damage Push 1 Explorer 
+11long
+
+
+
+ Minor, "Encompassing Ward", 1, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Water, Elements Earth], "Jorge Ramos","Defend 2 in every land where target Spirit has Presence ",k
+Minor
+Encompassing Ward
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements WaterElements Earth]
+Jorge Ramos
+Defend 2 in every land where target Spirit has Presence 
+10long
+
+
+
+ Minor, "Song of Sanctity", 1, Speed Slow, Source Presence, 1, [Land Mountain, Land Jungle],[Elements Sun, Elements Water, Elements Plant], "Nolan Nasser","If target land has 1 Explorer, Push all Explorer Otherwise, remove 1 Blight ",k
+Minor
+Song of Sanctity
+1
+Speed Slow
+Source Presence
+1
+[Land MountainLand Jungle]
+[Elements SunElements WaterElements Plant]
+Nolan Nasser
+If target land has 1 ExplorerPush all Explorer Otherwiseremove 1 Blight 
+11long
+
+
+
+ Minor, "Uncanny Melting", 1, Speed Slow, Source SacredSite, 1, LandAny,[Elements Sun, Elements Moon, Elements Water], "Joshua Wright","If Invaders are present, 1 Fear If target land is S/W, remove 1 Blight",k
+Minor
+Uncanny Melting
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements MoonElements Water]
+Joshua Wright
+If Invaders are present1 Fear If target land is S/Wremove 1 Blight
+11long
+
+
+
+ Minor, "Shadows of the Burning Forest", 0, Speed Slow, Source Presence, 0, TargetProperty Invaders,[Elements Moon, Elements Fire, Elements Plant], "Nolan Nasser","2 Fear If target land is M/J, Push 1 Explorer and 1 Town ",k
+Minor
+Shadows of the Burning Forest
+0
+Speed Slow
+Source Presence
+0
+TargetProperty Invaders
+[Elements MoonElements FireElements Plant]
+Nolan Nasser
+2 Fear If target land is M/JPush 1 Explorer and 1 Town 
+11long
+
+
+
+ Minor, "Steam Vents", 1, Speed Fast, Source Presence, 0, LandAny,[Elements Fire, Elements Air, Elements Water, Elements Earth], "Joshua Wright","Destroy 1 Explorer If you have 3 Earth: You may instead destroy 1 Town ",k
+Minor
+Steam Vents
+1
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements FireElements AirElements WaterElements Earth]
+Joshua Wright
+Destroy 1 Explorer If you have 3 Earth: You may instead destroy 1 Town 
+11long
+
+
+
+ Minor, "Veil the Night's Hunt", 1, Speed Fast, Source Presence, 2, TargetProperty Dahan,[Elements Moon, Elements Air, Elements Animal], "Loic Belliau","Each Dahan deals 1 Damage to a different Invader or Push up to 3 Dahan ",k
+Minor
+Veil the Night's Hunt
+1
+Speed Fast
+Source Presence
+2
+TargetProperty Dahan
+[Elements MoonElements AirElements Animal]
+Loic Belliau
+Each Dahan deals 1 Damage to a different Invader or Push up to 3 Dahan 
+11long
+
+
+
+ Minor, "Elemental Boon", 1, Speed Fast, null, TargetSpirit Any,[], "Moro Rogers","Target Spirit gains 3 different Elements of their choice If you target another Spirit, you also gain the chosen Elements ",k
+Minor
+Elemental Boon
+1
+Speed Fast
+null
+TargetSpirit Any
+[]
+Moro Rogers
+Target Spirit gains 3 different Elements of their choice If you target another Spirityou also gain the chosen Elements 
+10long
+
+
+
+ Minor, "Devouring Ants", 1, Speed Slow, Source SacredSite, 1, LandAny,[Elements Sun, Elements Earth, Elements Animal], "Nolan Nasser","1 Fear 1 Damage Destroy 1 Dahan If target land is J/S, +1 Damage ",k
+Minor
+Devouring Ants
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements EarthElements Animal]
+Nolan Nasser
+1 Fear 1 Damage Destroy 1 Dahan If target land is J/S+1 Damage 
+11long
+
+
+
+ Minor, "Dark and Tangled Woods", 1, Speed Fast, Source Presence, 1, LandAny,[Elements Moon, Elements Earth, Elements Plant], "Nolan Nasser","2 Fear If target and is M/J, Defend 3 ",k
+Minor
+Dark and Tangled Woods
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements MoonElements EarthElements Plant]
+Nolan Nasser
+2 Fear If target and is M/JDefend 3 
+11long
+
+
+
+ Minor, "Sap the Strength of Multitudes", 0, Speed Fast, Source Presence, 0, LandAny,[Elements Water, Elements Animal], "Loic Belliau","Defend 5 If you have 1 Air: Increase this Power's Range by 1",k
+Minor
+Sap the Strength of Multitudes
+0
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements WaterElements Animal]
+Loic Belliau
+Defend 5 If you have 1 Air: Increase this Power's Range by 1
+11long
+
+
+
+ Minor, "Drift down into Slumber", 0, Speed Fast, Source Presence, 2, LandAny,[Elements Air, Elements Earth, Elements Plant], "Lucas Durham","Defend 1 If target land is J/S, instead, Defend 4 ",k
+Minor
+Drift down into Slumber
+0
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements AirElements EarthElements Plant]
+Lucas Durham
+Defend 1 If target land is J/SinsteadDefend 4 
+11long
+
+
+
+ Minor, "Land of Haunts and Embers", 0, Speed Fast, Source Presence, 2, LandAny,[Elements Moon, Elements Fire, Elements Air], "Jorge Ramos","2 Fear Push up to 2 Explorer / Town If target land has Blight, +2 Fear Push up to 2 more Explorer / Town Add 1 Blight ",k
+Minor
+Land of Haunts and Embers
+0
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements MoonElements FireElements Air]
+Jorge Ramos
+2 Fear Push up to 2 Explorer / Town If target land has Blight+2 Fear Push up to 2 more Explorer / Town Add 1 Blight 
+11long
+
+
+
+ Minor, "Nature's Resilience", 1, Speed Fast, Source SacredSite, 1, LandAny,[Elements Earth, Elements Plant, Elements Animal], "Joshua Wright","Defend 6 If you have 2 Water: You may instead remove 1 Blight ",k
+Minor
+Nature's Resilience
+1
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements EarthElements PlantElements Animal]
+Joshua Wright
+Defend 6 If you have 2 Water: You may instead remove 1 Blight 
+11long
+
+
+
+ Minor, "Visions of Fiery Doom", 1, Speed Fast, Source Presence, 0, LandAny,[Elements Moon, Elements Fire], "Lucas Durham","1 Fear Push 1 Explorer / Town If you have 2 Fire: +1 Fear ",k
+Minor
+Visions of Fiery Doom
+1
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements MoonElements Fire]
+Lucas Durham
+1 Fear Push 1 Explorer / Town If you have 2 Fire: +1 Fear 
+11long
+
+
+
+ Minor, "Pull Beneath the Hungry Earth", 1, Speed Slow, Source Presence, 1, LandAny,[Elements Moon, Elements Water, Elements Earth], "Nolan Nasser","If target land has your Presence, 1 Fear and 1 Damage If target land is S/W, 1 Damage ",k
+Minor
+Pull Beneath the Hungry Earth
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements MoonElements WaterElements Earth]
+Nolan Nasser
+If target land has your Presence1 Fear and 1 Damage If target land is S/W1 Damage 
+11long
+
+
+
+ Minor, "Call of the Dahan Ways", 1, Speed Slow, Source Presence, 1, TargetProperty Dahan,[Elements Moon, Elements Water, Elements Animal], "Loic Belliau","Replace 1 Explorer with 1 Dahan If you have 2 Moon: You may instead replace 1 Town with 1 Dahan ",k
+Minor
+Call of the Dahan Ways
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements MoonElements WaterElements Animal]
+Loic Belliau
+Replace 1 Explorer with 1 Dahan If you have 2 Moon: You may instead replace 1 Town with 1 Dahan 
+11long
+
+
+
+ Minor, "Call to Bloodshed", 1, Speed Slow, Source Presence, 1, TargetProperty Dahan,[Elements Sun, Elements Fire, Elements Animal], "Jorge Ramos","1 Damager per Dahan or Gather up to 3 Dahan ",k
+Minor
+Call to Bloodshed
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements FireElements Animal]
+Jorge Ramos
+1 Damager per Dahan or Gather up to 3 Dahan 
+11long
+
+
+
+ Minor, "Call to Isolation", 0, Speed Fast, Source Presence, 1, TargetProperty Dahan,[Elements Sun, Elements Air, Elements Animal], "Graham Stermberg","Push 1 Explorer / Town per Dahan or Push 1 Dahan ",k
+Minor
+Call to Isolation
+0
+Speed Fast
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements AirElements Animal]
+Graham Stermberg
+Push 1 Explorer / Town per Dahan or Push 1 Dahan 
+11long
+
+
+
+ Minor, "Call to Migrate", 1, Speed Slow, Source Presence, 1, LandAny,[Elements Fire, Elements Air, Elements Animal], "Graham Stermberg","Gather up to 3 Dahan Push up to 3 Dahan ",k
+Minor
+Call to Migrate
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements FireElements AirElements Animal]
+Graham Stermberg
+Gather up to 3 Dahan Push up to 3 Dahan 
+11long
+
+
+
+ Minor, "Call to Tend", 1, Speed Slow, Source Presence, 1, TargetProperty Dahan,[Elements Water, Elements Plant, Elements Animal], "Loic Belliau","Remove 1 Blight or Push up to 3 Dahan ",k
+Minor
+Call to Tend
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements WaterElements PlantElements Animal]
+Loic Belliau
+Remove 1 Blight or Push up to 3 Dahan 
+11long
+
+
+
+ Minor, "Quicken the Earth's Struggles", 1, Speed Fast, Source SacredSite, 0, LandAny,[Elements Moon, Elements Fire, Elements Earth, Elements Animal], "Lucas Durham","1 Damage to each Town / City or Defend 10 ",k
+Minor
+Quicken the Earth's Struggles
+1
+Speed Fast
+Source SacredSite
+0
+LandAny
+[Elements MoonElements FireElements EarthElements Animal]
+Lucas Durham
+1 Damage to each Town / City or Defend 10 
+11long
+
+
+
+ Minor, "Delusions of Danger", 1, Speed Fast, Source Presence, 1, LandAny,[Elements Sun, Elements Moon, Elements Air], "Moro Rogers","Push 1 Explorer or 2 Fear ",k
+Minor
+Delusions of Danger
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements SunElements MoonElements Air]
+Moro Rogers
+Push 1 Explorer or 2 Fear 
+11long
+
+
+
+ Minor, "Drought", 1, Speed Slow, Source Presence, 1, LandAny,[Elements Sun, Elements Fire, Elements Earth], "Nolan Nasser","Destroy 3 Town 1 Damage to each Town / City Add 1 Blight If you have 3 Sun: Destroy 1 City ",k
+Minor
+Drought
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements SunElements FireElements Earth]
+Nolan Nasser
+Destroy 3 Town 1 Damage to each Town / City Add 1 Blight If you have 3 Sun: Destroy 1 City 
+11long
+
+
+
+ Minor, "Gift of Constancy", 0, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Earth], "Moro Rogers","Target Spirit gains 2 Energy At end of turn, target Spirit may Reclaim 1 Power Card instead of discarding it If you target another Spirit, you mal also Reclaim 1 Power Card instead of discarding it ",k
+Minor
+Gift of Constancy
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements Earth]
+Moro Rogers
+Target Spirit gains 2 Energy At end of turntarget Spirit may Reclaim 1 Power Card instead of discarding it If you target another Spirityou mal also Reclaim 1 Power Card instead of discarding it 
+10long
+
+
+
+ Minor, "Enticing Splendor", 0, Speed Fast, Source Presence, 0, TargetProperty NoBlight,[Elements Sun, Elements Air, Elements Plant], "Joshua Wright","Gather 1 Explorer / Town or Gather up to 2 Dahan ",k
+Minor
+Enticing Splendor
+0
+Speed Fast
+Source Presence
+0
+TargetProperty NoBlight
+[Elements SunElements AirElements Plant]
+Joshua Wright
+Gather 1 Explorer / Town or Gather up to 2 Dahan 
+11long
+
+
+
+ Minor, "Entrancing Apparitions", 1, Speed Fast, Source Presence, 1, LandAny,[Elements Moon, Elements Air, Elements Water], "Moro Rogers","Defend 2 If no Invaders are present, gather up to 2 Explorer ",k
+Minor
+Entrancing Apparitions
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements MoonElements AirElements Water]
+Moro Rogers
+Defend 2 If no Invaders are presentgather up to 2 Explorer 
+11long
+
+
+
+ Minor, "Gift of Living Energy", 0, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Fire, Elements Plant], "Nolan Nasser","Target Spirit gains 1 Energy, +1 Energy if target Spirit is not yourself If you have at least 2 SacredSite, target Spirit gains +1 Energy ",k
+Minor
+Gift of Living Energy
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements FireElements Plant]
+Nolan Nasser
+Target Spirit gains 1 Energy+1 Energy if target Spirit is not yourself If you have at least 2 SacredSitetarget Spirit gains +1 Energy 
+10long
+
+
+
+ Minor, "Gift of Power", 0, Speed Slow, null, TargetSpirit Any,[Elements Moon, Elements Water, Elements Earth, Elements Plant], "Joshua Wright","Target Spirit gains a Minor Power ",k
+Minor
+Gift of Power
+0
+Speed Slow
+null
+TargetSpirit Any
+[Elements MoonElements WaterElements EarthElements Plant]
+Joshua Wright
+Target Spirit gains a Minor Power 
+10long
+
+
+
+ Minor, "Gnawing Rootbiters", 0, Speed Slow, Source Presence, 1, LandAny,[Elements Earth, Elements Animal], "Moro Rogers","Push up to 2 Town ",k
+Minor
+Gnawing Rootbiters
+0
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements EarthElements Animal]
+Moro Rogers
+Push up to 2 Town 
+11long
+
+
+
+ Minor, "Lure of the Unknown", 0, Speed Fast, Source Presence, 2, TargetProperty NoInvaders,[Elements Moon, Elements Fire, Elements Air, Elements Plant], "Lucas Durham","Gather 1 Explorer / Town",k
+Minor
+Lure of the Unknown
+0
+Speed Fast
+Source Presence
+2
+TargetProperty NoInvaders
+[Elements MoonElements FireElements AirElements Plant]
+Lucas Durham
+Gather 1 Explorer / Town
+11long
+
+
+
+ Minor, "Purifying Flame", 1, Speed Slow, Source SacredSite, 1, LandAny,[Elements Sun, Elements Fire, Elements Air, Elements Plant], "Jorge Ramos","1 Damage per Blight If target land is M/S, you may instead remove 1 Blight ",k
+Minor
+Purifying Flame
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements FireElements AirElements Plant]
+Jorge Ramos
+1 Damage per Blight If target land is M/Syou may instead remove 1 Blight 
+11long
+
+
+
+ Minor, "Rain of Blood", 0, Speed Slow, Source SacredSite, 1, TargetProperty Invaders,[Elements Air, Elements Water, Elements Animal], "Kat Birmelin","2 Fear If target land has at least 2 Town / City, +1 Fear ",k
+Minor
+Rain of Blood
+0
+Speed Slow
+Source SacredSite
+1
+TargetProperty Invaders
+[Elements AirElements WaterElements Animal]
+Kat Birmelin
+2 Fear If target land has at least 2 Town / City+1 Fear 
+11long
+
+
+
+ Minor, "Reaching Grasp", 0, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Air, Elements Water], "Nolan Nasser","Target Spirit gets +2 Range with all their Powers ", 
+Minor
+Reaching Grasp
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements AirElements Water]
+Nolan Nasser
+Target Spirit gets +2 Range with all their Powers 
+10long
+
+
+
+ Minor, "Inflame the Fires of Life", 1, Speed Slow, Source SacredSite, 1, LandAny,[Elements Moon, Elements Fire, Elements Plant, Elements Animal], "Kat Birmelin","Add 1 Disease or' 1 Fear Add 1 Strife If you have 3 Animal: You may do both ",k
+Minor
+Inflame the Fires of Life
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements MoonElements FireElements PlantElements Animal]
+Kat Birmelin
+Add 1 Disease or' 1 Fear Add 1 Strife If you have 3 Animal: You may do both 
+11long
+
+
+
+ Minor, "Fire in the Sky", 1, Speed Fast, Source SacredSite, 1, LandAny,[Elements Sun, Elements Fire, Elements Air], "Moro Rogers","2 Fear Add 1 Strife",k
+Minor
+Fire in the Sky
+1
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements SunElements FireElements Air]
+Moro Rogers
+2 Fear Add 1 Strife
+11long
+
+
+
+ Minor, "Fleshrot Fever", 1, Speed Slow, Source Presence, 1, [Land Jungle, Land Sand],[Elements Fire, Elements Air, Elements Water, Elements Animal], "Joshua Wright","1 Fear Add 1 Disease ",k
+Minor
+Fleshrot Fever
+1
+Speed Slow
+Source Presence
+1
+[Land JungleLand Sand]
+[Elements FireElements AirElements WaterElements Animal]
+Joshua Wright
+1 Fear Add 1 Disease 
+11long
+
+
+
+ Minor, "Gold's Allure", 0, Speed Slow, Source Presence, 1, [Land Mountain],[Elements Fire, Elements Earth, Elements Animal], "Lucas Durham","Gather 1 Explorer and 1 Town Add 1 Strife ",k
+Minor
+Gold's Allure
+0
+Speed Slow
+Source Presence
+1
+[Land Mountain]
+[Elements FireElements EarthElements Animal]
+Lucas Durham
+Gather 1 Explorer and 1 Town Add 1 Strife 
+11long
+
+
+
+ Minor, "Guardian Serpents", 1, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Moon, Elements Earth, Elements Animal], "Moro Rogers","Add 1 Beasts in one of target Spirit's lands If target Spirit has a SacredSite in that land: Defend 4 there ",k
+Minor
+Guardian Serpents
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements MoonElements EarthElements Animal]
+Moro Rogers
+Add 1 Beasts in one of target Spirit's lands If target Spirit has a SacredSite in that land: Defend 4 there 
+10long
+
+
+
+ Minor, "Here there be Monsters", 0, Speed Slow, Source Presence, 0, Land Inland,[Elements Moon, Elements Air, Elements Animal], "Joshua Wright","You may Push 1 Explorer / Town / Dahan 2 Fear If target land has any Beasts, 1 Fear ",k
+Minor
+Here there be Monsters
+0
+Speed Slow
+Source Presence
+0
+Land Inland
+[Elements MoonElements AirElements Animal]
+Joshua Wright
+You may Push 1 Explorer / Town / Dahan 2 Fear If target land has any Beasts1 Fear 
+11long
+
+
+
+ Minor, "Infested Aquifers", 1, Speed Slow, Source Presence, 0, LandAny,[Elements Moon, Elements Water, Elements Earth, Elements Animal], "Nolan Nasser","If target land has any Disease, 1 Damage to each Invader there or If target land is M/W, 1 Fear and add 1 Disease ",k
+Minor
+Infested Aquifers
+1
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements MoonElements WaterElements EarthElements Animal]
+Nolan Nasser
+If target land has any Disease1 Damage to each Invader there or If target land is M/W1 Fear and add 1 Disease 
+11long
+
+
+
+ Minor, "Poisoned Dew", 1, Speed Slow, Source Presence, 1, LandAny,[Elements Fire, Elements Water, Elements Plant], "Cari Corene","Destroy 1 Explorer If target land is J/W, destroy all Explorer ",k
+Minor
+Poisoned Dew
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements FireElements WaterElements Plant]
+Cari Corene
+Destroy 1 Explorer If target land is J/Wdestroy all Explorer 
+11long
+
+
+
+ Minor, "Portents of Disaster", 0, Speed Fast, Source SacredSite, 1, TargetProperty Invaders,[Elements Sun, Elements Moon, Elements Air], "Nolan Nasser","2 Fear The next time an Invader is destroyed in target land this turn, 1 Fear ",k
+Minor
+Portents of Disaster
+0
+Speed Fast
+Source SacredSite
+1
+TargetProperty Invaders
+[Elements SunElements MoonElements Air]
+Nolan Nasser
+2 Fear The next time an Invader is destroyed in target land this turn1 Fear 
+11long
+
+
+
+ Minor, "Prowling Panthers", 1, Speed Slow, Source Presence, 1, [Land Mountain, Land Jungle],[Elements Moon, Elements Fire, Elements Animal], "Moro Rogers","1 Fear Add 1 Beasts or If target land has Beasts, destroy 1 Explorer / Town ",k
+Minor
+Prowling Panthers
+1
+Speed Slow
+Source Presence
+1
+[Land MountainLand Jungle]
+[Elements MoonElements FireElements Animal]
+Moro Rogers
+1 Fear Add 1 Beasts or If target land has Beastsdestroy 1 Explorer / Town 
+11long
+
+
+
+ Minor, "Reing Rain", 1, Speed Slow , Source SacredSite, 1, LandAny,[Elements Water, Elements Earth, Elements Plant], "Nolan Nasser","If target land is J/S, remove 1 Blight If you have 3 Plant: Add 1 Wilds ",k
+Minor
+Reing Rain
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements WaterElements EarthElements Plant]
+Nolan Nasser
+If target land is J/Sremove 1 Blight If you have 3 Plant: Add 1 Wilds 
+11long
+
+
+
+ Minor, "Rites of the Land's Rejection", 1, Speed Fast, Source SacredSite, 2, TargetProperty Dahan,[Elements Moon, Elements Fire, Elements Earth], "Joshua Wright","Invaders do not Build in target land this turn 1 Fear per Town / City or 1 Fear per Dahan, whichever is less or Push up to 3 Dahan from target land ",k
+Minor
+Rites of the Land's Rejection
+1
+Speed Fast
+Source SacredSite
+2
+TargetProperty Dahan
+[Elements MoonElements FireElements Earth]
+Joshua Wright
+Invaders do not Build in target land this turn 1 Fear per Town / City or 1 Fear per Dahanwhichever is less or Push up to 3 Dahan from target land 
+11long
+
+
+
+ Minor, "Pact of the Joined Hunt", 1, Speed Slow, null, TargetSpirit Any,[Elements Sun, Elements Plant, Elements Animal], "Jorge Ramos","Target Spirit Gathers 1 Dahan into one of their lands 1 Damage in that land per Dahan present ",k
+Minor
+Pact of the Joined Hunt
+1
+Speed Slow
+null
+TargetSpirit Any
+[Elements SunElements PlantElements Animal]
+Jorge Ramos
+Target Spirit Gathers 1 Dahan into one of their lands 1 Damage in that land per Dahan present 
+10long
+
+
+
+ Minor, "RazorSharp Undergrowth", 1, Speed Fast, Source Presence, 0, TargetProperty NoBlight,[Elements Moon, Elements Plant], "Cari Corene","Destroy 1 Explorer and 1 Dahan Add 1 Wilds Defend 2 ",k
+Minor
+RazorSharp Undergrowth
+1
+Speed Fast
+Source Presence
+0
+TargetProperty NoBlight
+[Elements MoonElements Plant]
+Cari Corene
+Destroy 1 Explorer and 1 Dahan Add 1 Wilds Defend 2 
+11long
+
+
+
+ Minor, "Growth through Sacrifice", 0, Speed Fast, null, TargetSpirit Any,[Elements Moon, Elements Fire, Elements Water, Elements Plant], "Lucas Durham","Destroy 1 of your Presence Target Spirit removes 1 Blight from one of their lands or Adds 1 Presence to one of their lands If you have 2 Sun: They may do both, in the same land ",k
+Minor
+Growth through Sacrifice
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements MoonElements FireElements WaterElements Plant]
+Lucas Durham
+Destroy 1 of your Presence Target Spirit removes 1 Blight from one of their lands or Adds 1 Presence to one of their lands If you have 2 Sun: They may do bothin the same land 
+10long
+
+
+
+ Minor, "Scour the Land", 1, Speed Slow, Source SacredSite, 2, LandAny,[Elements Air, Elements Earth], "Joshua Wright","Destroy 3 Town and all Explorer Add 1 Blight If you have 3 Air: This power may be Fast ",k
+Minor
+Scour the Land
+1
+Speed Slow
+Source SacredSite
+2
+LandAny
+[Elements AirElements Earth]
+Joshua Wright
+Destroy 3 Town and all Explorer Add 1 Blight If you have 3 Air: This power may be Fast 
+11long
+
+
+
+ Minor, "Sky stretches to Shore", 1, Speed Fast, null, TargetSpirit Any,[Elements Sun, Elements Air, Elements Water, Elements Earth], "Joshua Wright","This turn, target Spirit may use 1 Slow Power as if it were Fast, or vice versa Target Spirit gains +3 Range for targeting Coast lands only ",k
+Minor
+Sky stretches to Shore
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements AirElements WaterElements Earth]
+Joshua Wright
+This turntarget Spirit may use 1 Slow Power as if it were Fastor vice versa Target Spirit gains +3 Range for targeting Coast lands only 
+10long
+
+
+
+ Minor, "Swarming Wasps", 0, Speed Fast, Source Presence, 1, TargetProperty NoBlight,[Elements Fire, Elements Air, Elements Animal], "Joshua Wright","Add 1 Beasts or If target land has Beasts, Push up to 2 Explorer ",k
+Minor
+Swarming Wasps
+0
+Speed Fast
+Source Presence
+1
+TargetProperty NoBlight
+[Elements FireElements AirElements Animal]
+Joshua Wright
+Add 1 Beasts or If target land has BeastsPush up to 2 Explorer 
+11long
+
+
+
+ Minor, "Absorb Corruption", 1, Speed Slow, Source Presence, 0, LandAny,[Elements Sun, Elements Earth, Elements Plant], "Nolan Nasser","Gather 1 Blight or Pay 1 Energy to remove 1 Blight If you have 2 Plant: You may do both ",k
+Minor
+Absorb Corruption
+1
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements SunElements EarthElements Plant]
+Nolan Nasser
+Gather 1 Blight or Pay 1 Energy to remove 1 Blight If you have 2 Plant: You may do both 
+11long
+
+
+
+ Minor, "Animated Wrackroot", 0, Speed Slow, Source Presence, 0, LandAny,[Elements Moon, Elements Fire, Elements Plant], "Joshua Wright","1 Fear Destroy 1 Explorer or Add 1 Wilds ",k
+Minor
+Animated Wrackroot
+0
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements MoonElements FireElements Plant]
+Joshua Wright
+1 Fear Destroy 1 Explorer or Add 1 Wilds 
+11long
+
+
+
+ Minor, "Promises of Protection", 0, Speed Fast, Source SacredSite, 2, LandAny,[Elements Sun, Elements Earth, Elements Animal], "Lucas Durham","Gather up to 2 Dahan Dahan have +2 Health while in target land ",k
+Minor
+Promises of Protection
+0
+Speed Fast
+Source SacredSite
+2
+LandAny
+[Elements SunElements EarthElements Animal]
+Lucas Durham
+Gather up to 2 Dahan Dahan have +2 Health while in target land 
+11long
+
+
+
+ Minor, "Call to Ferocity", 0, Speed Slow, Source Presence, 1, TargetProperty Invaders,[Elements Sun, Elements Fire, Elements Earth], "Joshua Wright","Gather up to 3 Dahan or If target land has Dahan, 1 Fear and Push 1 Explorer and 1 Town ",k
+Minor
+Call to Ferocity
+0
+Speed Slow
+Source Presence
+1
+TargetProperty Invaders
+[Elements SunElements FireElements Earth]
+Joshua Wright
+Gather up to 3 Dahan or If target land has Dahan1 Fear and Push 1 Explorer and 1 Town 
+11long
+
+
+
+ Minor, "Call to Trade", 1, Speed Fast, Source Presence, 2, TargetProperty Dahan,[Elements Air, Elements Water, Elements Earth, Elements Plant], "Kat Birmelin","You may Gather 1 Dahan If the Terror Level is 2 or lower, Gather 1 Town and the first Ravage in target land this turn becomes a Build there instead ",k
+Minor
+Call to Trade
+1
+Speed Fast
+Source Presence
+2
+TargetProperty Dahan
+[Elements AirElements WaterElements EarthElements Plant]
+Kat Birmelin
+You may Gather 1 Dahan If the Terror Level is 2 or lowerGather 1 Town and the first Ravage in target land this turn becomes a Build there instead 
+11long
+
+
+
+ Minor, "Confounding Mists", 1, Speed Fast, Source Presence, 1, LandAny,[Elements Air, Elements Water], "Loic Belliau","Defend 4 or Each Invader added to target land this turn may be immediately Pushed to any adjacent land ",k
+Minor
+Confounding Mists
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements AirElements Water]
+Loic Belliau
+Defend 4 or Each Invader added to target land this turn may be immediately Pushed to any adjacent land 
+11long
+
+
+
+ Minor, "Cycles of Time and Tide", 1, Speed Fast, Source Presence, 1, [Land Coastal],[Elements Sun, Elements Moon, Elements Water], "Joshua Wright","If there are Dahan, add 1 Dahan If there are no Dahan, remove 1 Blight ",k
+Minor
+Cycles of Time and Tide
+1
+Speed Fast
+Source Presence
+1
+[Land Coastal]
+[Elements SunElements MoonElements Water]
+Joshua Wright
+If there are Dahanadd 1 Dahan If there are no Dahanremove 1 Blight 
+11long
+
+
+
+ Minor, "Disorienting Landscape", 1, Speed Fast, Source SacredSite, 2, LandAny,[Elements Moon, Elements Air, Elements Plant], "Nolan Nasser","Push 1 Explorer If target land is M/J, add 1 Wilds ",k
+Minor
+Disorienting Landscape
+1
+Speed Fast
+Source SacredSite
+2
+LandAny
+[Elements MoonElements AirElements Plant]
+Nolan Nasser
+Push 1 Explorer If target land is M/Jadd 1 Wilds 
+11long
+
+
+
+ Minor, "Elusive Ambushes", 1, Speed Fast, Source Presence, 1, TargetProperty Dahan,[Elements Sun, Elements Fire, Elements Water], "Nolan Nasser","1 Damage or Defend 4 ",k
+Minor
+Elusive Ambushes
+1
+Speed Fast
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements FireElements Water]
+Nolan Nasser
+1 Damage or Defend 4 
+11long
+
+
+
+ Minor, "Tormenting Rotflies", 1, Speed Slow, Source Presence, 2, [Land Sand, Land Wetland],[Elements Air, Elements Plant, Elements Animal], "Kat Birmelin","Add 1 Disease or If target land has Invaders, 2 Fear If Disease is present, +1 Fear If Blight is present, +1 Fear ",k
+Minor
+Tormenting Rotflies
+1
+Speed Slow
+Source Presence
+2
+[Land SandLand Wetland]
+[Elements AirElements PlantElements Animal]
+Kat Birmelin
+Add 1 Disease or If target land has Invaders2 Fear If Disease is present+1 Fear If Blight is present+1 Fear 
+11long
+
+
+
+ Minor, "Twilight Fog brings Madness", 0, Speed Slow, Source Presence, 1, LandAny,[Elements Sun, Elements Moon, Elements Air, Elements Water], "Loic Belliau","Add 1 Strife Push 1 Dahan Each remaining Dahan takes 1 Damage ",k
+Minor
+Twilight Fog brings Madness
+0
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements SunElements MoonElements AirElements Water]
+Loic Belliau
+Add 1 Strife Push 1 Dahan Each remaining Dahan takes 1 Damage 
+11long
+
+
+
+ Minor, "Teeming Rivers", 1, Speed Slow, Source SacredSite, 2, [Land Mountain, Land Wetland],[Elements Sun, Elements Water, Elements Plant, Elements Animal], "Lucas Durham","If target land has no Blight, add 1 Beasts If target land has exactly 1 Blight, remove it ",k
+Minor
+Teeming Rivers
+1
+Speed Slow
+Source SacredSite
+2
+[Land MountainLand Wetland]
+[Elements SunElements WaterElements PlantElements Animal]
+Lucas Durham
+If target land has no Blightadd 1 Beasts If target land has exactly 1 Blightremove it 
+11long
 
 
 

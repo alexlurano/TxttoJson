@@ -1,6 +1,5 @@
 package parser;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,7 +22,7 @@ public class RawCardListToNestedArray {
 
 	private void printJob(String args) { System.out.println(args); }
 	private void printArray(ArrayList<String> args) {
-		args.forEach((thingy) -> System.out.println(thingy + ""));
+		args.forEach((thingy) -> System.out.println(thingy));
 	}
 	private void printFile(ArrayList<String> args, boolean printNow) {
 		String projLoc = System.getProperty("user.dir") + "\\src\\data\\" + "outputTest.txt";
@@ -40,7 +39,8 @@ public class RawCardListToNestedArray {
 		int index = rawCards.size();
 		ArrayList<String> emptyTemp = new ArrayList<String>();
 		emptyTemp.add("nonsense");
-		index = 2;
+//		beautify(rawCards.get(0),0);
+//		beautify(rawCards.get(2),2);
 		for(int i=0;i<index;i++) {
 
 			cleanCardInfo.add(new StringToDataForCards());
@@ -151,21 +151,17 @@ public class RawCardListToNestedArray {
 	
 	private ArrayList<String> combineInfoInBrackets(ArrayList<String> args,char leftBracket,char rightBracket) {
 		ArrayList<String> uglyDataArr = new ArrayList<String>();
-		ArrayList<Integer> removeSpots = new ArrayList<Integer>();
-		ArrayList<String> cleanDataArr = new ArrayList<String>();
 		uglyDataArr = args;
-		cleanDataArr = args;
 		
 		for(int i=0;i<uglyDataArr.size();i++) {
 			String uglyStuff;
 			String cleanElement;
 			uglyStuff = uglyDataArr.get(i);
-
+			int firstRemovalSpot = -1;
 			if((uglyStuff.charAt(0) == leftBracket) && (uglyStuff.charAt(uglyStuff.length()-1) != rightBracket)) {
 				cleanElement = uglyStuff;
-//				uglyDataArr.remove(i);
-				removeSpots.add(i);
-				i++;
+				firstRemovalSpot = i;
+				uglyDataArr.remove(i);
 				uglyStuff = uglyDataArr.get(i);
 
 				boolean loopCheck = true;
@@ -175,36 +171,22 @@ public class RawCardListToNestedArray {
 					if((uglyStuff.charAt(uglyStuff.length()-1)) == rightBracket)
 						loopCheck = false;
 
-//					uglyDataArr.remove(i);
-					removeSpots.add(i);
-					i++;
+					uglyDataArr.remove(i);
 					if(uglyDataArr.size() > i)
 						uglyStuff = uglyDataArr.get(i);
 					else {
 						i--;
-						printJob(uglyDataArr.get(i));
 					}
 						
 				}
-				int shrinkCounter = 0; // hack to avoid for looping all removespots to correspond to thenew size of cleanDataArr
-				for(int a=0;a<removeSpots.size();a++) {
-
-					int index = removeSpots.get(a) + shrinkCounter;
-					printJob(cleanDataArr.get(index)+"removingj");
-					cleanDataArr.remove(index);
-					shrinkCounter--;
-					
-
-				}
-
-				cleanDataArr.add(removeSpots.get(0), cleanElement);
-				removeSpots.clear();
+				if(firstRemovalSpot > 0)
+					uglyDataArr.add(firstRemovalSpot, cleanElement);
 			}
 			
 			
 				
 		}
-		return cleanDataArr;
+		return uglyDataArr;
 		
 		
 	}
