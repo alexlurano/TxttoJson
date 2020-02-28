@@ -60,7 +60,8 @@ public class RawCardListToNestedArray {
 	
 	//------------------------------------------------------------------------------
 	private ArrayList<String> beautify(String rawInfo,int cardNum) {
-
+		
+		int lengthofArr = -1;
 		ArrayList<String> dicedCardInfo = new ArrayList<String>();
 		ArrayList<String> completeCardInfo = new ArrayList<String>();
 		String s = rawInfo;
@@ -69,9 +70,9 @@ public class RawCardListToNestedArray {
 		completeCardInfo = combineInfoInBrackets(dicedCardInfo,'[',']');
 		completeCardInfo = combineInfoInBrackets(completeCardInfo,'"','"');
 		completeCardInfo = removeQuotes(completeCardInfo);
-		completeCardInfo.add(0, s);
+		lengthofArr = completeCardInfo.size();
+		completeCardInfo.remove(lengthofArr-2); // removes the name of the artist, which is in teh 2nd to last spot;
 
-		completeCardInfo.add(completeCardInfo.size()+"long");
 		printFile(completeCardInfo,false);
 		return completeCardInfo;
 		// send our parsed array of strings to be converted to primitive types.
