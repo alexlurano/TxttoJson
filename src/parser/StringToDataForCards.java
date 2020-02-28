@@ -26,10 +26,12 @@ public class StringToDataForCards {
 	}
 	
 	public void assignValues(ArrayList<String> args) {
+		if(args.size()<8)
+			return;
 		holdingArray = args;
 		// sometimes range doesnt exist, ripping out range at start is easier than adding null to array
 		if(holdingArray.size() == 9) {
-			range = Integer.parseInt(holdingArray.get(5));
+			range = Integer.valueOf(holdingArray.get(5));
 			holdingArray.remove(5);
 		}
 		cardType = holdingArray.get(0);

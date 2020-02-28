@@ -18,34 +18,37 @@ public class RawCardListToNestedArray {
 	ArrayList<StringToDataForCards> cleanCardInfo = new ArrayList<StringToDataForCards>();
 
 	TextDocWriter w = new TextDocWriter();
-	
-
+	String fileName = "";
+	public RawCardListToNestedArray(String args) {
+		fileName = args;
+	}
 	private void printJob(String args) { System.out.println(args); }
 	private void printArray(ArrayList<String> args) {
 		args.forEach((thingy) -> System.out.println(thingy));
 	}
 	private void printFile(ArrayList<String> args, boolean printNow) {
-		String projLoc = System.getProperty("user.dir") + "\\src\\data\\" + "outputTest.txt";
+		String projLoc = System.getProperty("user.dir") + "\\src\\data\\" + fileName;
 		w.addInfoToWrite(args);
 		if(printNow)
 			w.writeListToFile(projLoc);
 	}
-	public RawCardListToNestedArray() {
-		// TODO Auto-generated constructor stub
-	}
+
 	
 	public void createJsonFile(ArrayList<String> rawCardInfo) {
 		rawCards = rawCardInfo;
 		int index = rawCards.size();
 		ArrayList<String> emptyTemp = new ArrayList<String>();
+		ArrayList<String> majorDebugger = new ArrayList<String>();
 		emptyTemp.add("nonsense");
-//		beautify(rawCards.get(0),0);
-//		beautify(rawCards.get(2),2);
-		for(int i=0;i<index;i++) {
+		
+			for(int i=0;i<index;i++) {
+				majorDebugger = beautify(rawCards.get(i),i);
+				cleanCardInfo.add(new StringToDataForCards());
 
-			cleanCardInfo.add(new StringToDataForCards());
-			cleanCardInfo.get(i).assignValues(beautify(rawCards.get(i),i));
-		}
+				if(fileName.equalsIgnoreCase("cleanminor.txt"))
+					cleanCardInfo.get(i).assignValues(majorDebugger);
+				majorDebugger.clear();
+			}
 
 		printFile(emptyTemp,true);
 	}
@@ -65,13 +68,16 @@ public class RawCardListToNestedArray {
 		ArrayList<String> dicedCardInfo = new ArrayList<String>();
 		ArrayList<String> completeCardInfo = new ArrayList<String>();
 		String s = rawInfo;
+		printJob(s);
 		s = deleteCppRelics(s);
+		printJob(s);
 		dicedCardInfo = parseOutCommas(s);
 		completeCardInfo = combineInfoInBrackets(dicedCardInfo,'[',']');
 		completeCardInfo = combineInfoInBrackets(completeCardInfo,'"','"');
 		completeCardInfo = removeQuotes(completeCardInfo);
 		lengthofArr = completeCardInfo.size();
-		completeCardInfo.remove(lengthofArr-2); // removes the name of the artist, which is in teh 2nd to last spot;
+		if(completeCardInfo.size() > 0)
+			completeCardInfo.remove(lengthofArr-2); // removes the name of the artist, which is in teh 2nd to last spot;
 
 		printFile(completeCardInfo,false);
 		return completeCardInfo;

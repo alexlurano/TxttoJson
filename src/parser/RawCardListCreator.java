@@ -16,7 +16,8 @@ public class RawCardListCreator {
 
 	private void printJob(String args) { System.out.println(args); }
 
-	public RawCardListCreator() {
+	public RawCardListCreator(String myFile) {
+		germanfile = myFile;
 		// TODO Auto-generated constructor stub
 	}
 	
