@@ -3,6 +3,9 @@ package parser;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import JsonStuff.StringToDataForCards;
+import objectToJson.JsonMaker;
 /*
  *  Method Call order:
  *  createJsonFIle : outside call
@@ -42,13 +45,14 @@ public class RawCardListToNestedArray {
 		emptyTemp.add("nonsense");
 		
 			for(int i=0;i<index;i++) {
-				printJob(i+"cardnum");
 				majorDebugger = beautify(rawCards.get(i),i);
 				cleanCardInfo.add(new StringToDataForCards());
 
 	//			if(fileName.equalsIgnoreCase("cleanminor.txt"))
 					cleanCardInfo.get(i).assignValues(majorDebugger);
 				majorDebugger.clear();
+				JsonMaker thisCard = new JsonMaker();
+				thisCard.makeJson(cleanCardInfo.get(i));
 			}
 
 		printFile(emptyTemp,true);

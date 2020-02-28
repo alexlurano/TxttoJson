@@ -1,0 +1,786 @@
+Minor
+Savage Mawbeasts
+0
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements FireElements Animal]
+If target land is J/W1 Fear and 1 Damage If you have 3 Animal: 1 Damage 
+
+
+
+Minor
+Voracious Growth
+1
+Speed Slow
+Source SacredSite
+1
+[Land JungleLand Wetland]
+[Elements WaterElements Plant]
+2 Damage or Remove 1 Blight 
+
+
+
+Minor
+Rouse the Trees and Stones
+1
+Speed Slow
+Source SacredSite
+1
+TargetProperty NoBlight
+[Elements FireElements EarthElements Plant]
+2 Damage Push 1 Explorer 
+
+
+
+Minor
+Encompassing Ward
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements WaterElements Earth]
+Defend 2 in every land where target Spirit has Presence 
+
+
+
+Minor
+Song of Sanctity
+1
+Speed Slow
+Source Presence
+1
+[Land MountainLand Jungle]
+[Elements SunElements WaterElements Plant]
+If target land has 1 ExplorerPush all Explorer Otherwiseremove 1 Blight 
+
+
+
+Minor
+Uncanny Melting
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements MoonElements Water]
+If Invaders are present1 Fear If target land is S/Wremove 1 Blight
+
+
+
+Minor
+Shadows of the Burning Forest
+0
+Speed Slow
+Source Presence
+0
+TargetProperty Invaders
+[Elements MoonElements FireElements Plant]
+2 Fear If target land is M/JPush 1 Explorer and 1 Town 
+
+
+
+Minor
+Steam Vents
+1
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements FireElements AirElements WaterElements Earth]
+Destroy 1 Explorer If you have 3 Earth: You may instead destroy 1 Town 
+
+
+
+Minor
+Veil the Night's Hunt
+1
+Speed Fast
+Source Presence
+2
+TargetProperty Dahan
+[Elements MoonElements AirElements Animal]
+Each Dahan deals 1 Damage to a different Invader or Push up to 3 Dahan 
+
+
+
+Minor
+Elemental Boon
+1
+Speed Fast
+null
+TargetSpirit Any
+[]
+Target Spirit gains 3 different Elements of their choice If you target another Spirityou also gain the chosen Elements 
+
+
+
+Minor
+Devouring Ants
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements EarthElements Animal]
+1 Fear 1 Damage Destroy 1 Dahan If target land is J/S+1 Damage 
+
+
+
+Minor
+Dark and Tangled Woods
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements MoonElements EarthElements Plant]
+2 Fear If target and is M/JDefend 3 
+
+
+
+Minor
+Sap the Strength of Multitudes
+0
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements WaterElements Animal]
+Defend 5 If you have 1 Air: Increase this Power's Range by 1
+
+
+
+Minor
+Drift down into Slumber
+0
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements AirElements EarthElements Plant]
+Defend 1 If target land is J/SinsteadDefend 4 
+
+
+
+Minor
+Land of Haunts and Embers
+0
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements MoonElements FireElements Air]
+2 Fear Push up to 2 Explorer / Town If target land has Blight+2 Fear Push up to 2 more Explorer / Town Add 1 Blight 
+
+
+
+Minor
+Nature's Resilience
+1
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements EarthElements PlantElements Animal]
+Defend 6 If you have 2 Water: You may instead remove 1 Blight 
+
+
+
+Minor
+Visions of Fiery Doom
+1
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements MoonElements Fire]
+1 Fear Push 1 Explorer / Town If you have 2 Fire: +1 Fear 
+
+
+
+Minor
+Pull Beneath the Hungry Earth
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements MoonElements WaterElements Earth]
+If target land has your Presence1 Fear and 1 Damage If target land is S/W1 Damage 
+
+
+
+Minor
+Call of the Dahan Ways
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements MoonElements WaterElements Animal]
+Replace 1 Explorer with 1 Dahan If you have 2 Moon: You may instead replace 1 Town with 1 Dahan 
+
+
+
+Minor
+Call to Bloodshed
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements FireElements Animal]
+1 Damager per Dahan or Gather up to 3 Dahan 
+
+
+
+Minor
+Call to Isolation
+0
+Speed Fast
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements AirElements Animal]
+Push 1 Explorer / Town per Dahan or Push 1 Dahan 
+
+
+
+Minor
+Call to Migrate
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements FireElements AirElements Animal]
+Gather up to 3 Dahan Push up to 3 Dahan 
+
+
+
+Minor
+Call to Tend
+1
+Speed Slow
+Source Presence
+1
+TargetProperty Dahan
+[Elements WaterElements PlantElements Animal]
+Remove 1 Blight or Push up to 3 Dahan 
+
+
+
+Minor
+Quicken the Earth's Struggles
+1
+Speed Fast
+Source SacredSite
+0
+LandAny
+[Elements MoonElements FireElements EarthElements Animal]
+1 Damage to each Town / City or Defend 10 
+
+
+
+Minor
+Delusions of Danger
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements SunElements MoonElements Air]
+Push 1 Explorer or 2 Fear 
+
+
+
+Minor
+Drought
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements SunElements FireElements Earth]
+Destroy 3 Town 1 Damage to each Town / City Add 1 Blight If you have 3 Sun: Destroy 1 City 
+
+
+
+Minor
+Gift of Constancy
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements Earth]
+Target Spirit gains 2 Energy At end of turntarget Spirit may Reclaim 1 Power Card instead of discarding it If you target another Spirityou mal also Reclaim 1 Power Card instead of discarding it 
+
+
+
+Minor
+Enticing Splendor
+0
+Speed Fast
+Source Presence
+0
+TargetProperty NoBlight
+[Elements SunElements AirElements Plant]
+Gather 1 Explorer / Town or Gather up to 2 Dahan 
+
+
+
+Minor
+Entrancing Apparitions
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements MoonElements AirElements Water]
+Defend 2 If no Invaders are presentgather up to 2 Explorer 
+
+
+
+Minor
+Gift of Living Energy
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements FireElements Plant]
+Target Spirit gains 1 Energy+1 Energy if target Spirit is not yourself If you have at least 2 SacredSitetarget Spirit gains +1 Energy 
+
+
+
+Minor
+Gift of Power
+0
+Speed Slow
+null
+TargetSpirit Any
+[Elements MoonElements WaterElements EarthElements Plant]
+Target Spirit gains a Minor Power 
+
+
+
+Minor
+Gnawing Rootbiters
+0
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements EarthElements Animal]
+Push up to 2 Town 
+
+
+
+Minor
+Lure of the Unknown
+0
+Speed Fast
+Source Presence
+2
+TargetProperty NoInvaders
+[Elements MoonElements FireElements AirElements Plant]
+Gather 1 Explorer / Town
+
+
+
+Minor
+Purifying Flame
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements SunElements FireElements AirElements Plant]
+1 Damage per Blight If target land is M/Syou may instead remove 1 Blight 
+
+
+
+Minor
+Rain of Blood
+0
+Speed Slow
+Source SacredSite
+1
+TargetProperty Invaders
+[Elements AirElements WaterElements Animal]
+2 Fear If target land has at least 2 Town / City+1 Fear 
+
+
+
+Minor
+Reaching Grasp
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements AirElements Water]
+Target Spirit gets +2 Range with all their Powers 
+
+
+
+Minor
+Inflame the Fires of Life
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements MoonElements FireElements PlantElements Animal]
+Add 1 Disease or' 1 Fear Add 1 Strife If you have 3 Animal: You may do both 
+
+
+
+Minor
+Fire in the Sky
+1
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements SunElements FireElements Air]
+2 Fear Add 1 Strife
+
+
+
+Minor
+Fleshrot Fever
+1
+Speed Slow
+Source Presence
+1
+[Land JungleLand Sand]
+[Elements FireElements AirElements WaterElements Animal]
+1 Fear Add 1 Disease 
+
+
+
+Minor
+Gold's Allure
+0
+Speed Slow
+Source Presence
+1
+[Land Mountain]
+[Elements FireElements EarthElements Animal]
+Gather 1 Explorer and 1 Town Add 1 Strife 
+
+
+
+Minor
+Guardian Serpents
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements MoonElements EarthElements Animal]
+Add 1 Beasts in one of target Spirit's lands If target Spirit has a SacredSite in that land: Defend 4 there 
+
+
+
+Minor
+Here there be Monsters
+0
+Speed Slow
+Source Presence
+0
+Land Inland
+[Elements MoonElements AirElements Animal]
+You may Push 1 Explorer / Town / Dahan 2 Fear If target land has any Beasts1 Fear 
+
+
+
+Minor
+Infested Aquifers
+1
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements MoonElements WaterElements EarthElements Animal]
+If target land has any Disease1 Damage to each Invader there or If target land is M/W1 Fear and add 1 Disease 
+
+
+
+Minor
+Poisoned Dew
+1
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements FireElements WaterElements Plant]
+Destroy 1 Explorer If target land is J/Wdestroy all Explorer 
+
+
+
+Minor
+Portents of Disaster
+0
+Speed Fast
+Source SacredSite
+1
+TargetProperty Invaders
+[Elements SunElements MoonElements Air]
+2 Fear The next time an Invader is destroyed in target land this turn1 Fear 
+
+
+
+Minor
+Prowling Panthers
+1
+Speed Slow
+Source Presence
+1
+[Land MountainLand Jungle]
+[Elements MoonElements FireElements Animal]
+1 Fear Add 1 Beasts or If target land has Beastsdestroy 1 Explorer / Town 
+
+
+
+Minor
+Reing Rain
+1
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements WaterElements EarthElements Plant]
+If target land is J/Sremove 1 Blight If you have 3 Plant: Add 1 Wilds 
+
+
+
+Minor
+Rites of the Land's Rejection
+1
+Speed Fast
+Source SacredSite
+2
+TargetProperty Dahan
+[Elements MoonElements FireElements Earth]
+Invaders do not Build in target land this turn 1 Fear per Town / City or 1 Fear per Dahanwhichever is less or Push up to 3 Dahan from target land 
+
+
+
+Minor
+Pact of the Joined Hunt
+1
+Speed Slow
+null
+TargetSpirit Any
+[Elements SunElements PlantElements Animal]
+Target Spirit Gathers 1 Dahan into one of their lands 1 Damage in that land per Dahan present 
+
+
+
+Minor
+RazorSharp Undergrowth
+1
+Speed Fast
+Source Presence
+0
+TargetProperty NoBlight
+[Elements MoonElements Plant]
+Destroy 1 Explorer and 1 Dahan Add 1 Wilds Defend 2 
+
+
+
+Minor
+Growth through Sacrifice
+0
+Speed Fast
+null
+TargetSpirit Any
+[Elements MoonElements FireElements WaterElements Plant]
+Destroy 1 of your Presence Target Spirit removes 1 Blight from one of their lands or Adds 1 Presence to one of their lands If you have 2 Sun: They may do bothin the same land 
+
+
+
+Minor
+Scour the Land
+1
+Speed Slow
+Source SacredSite
+2
+LandAny
+[Elements AirElements Earth]
+Destroy 3 Town and all Explorer Add 1 Blight If you have 3 Air: This power may be Fast 
+
+
+
+Minor
+Sky stretches to Shore
+1
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements AirElements WaterElements Earth]
+This turntarget Spirit may use 1 Slow Power as if it were Fastor vice versa Target Spirit gains +3 Range for targeting Coast lands only 
+
+
+
+Minor
+Swarming Wasps
+0
+Speed Fast
+Source Presence
+1
+TargetProperty NoBlight
+[Elements FireElements AirElements Animal]
+Add 1 Beasts or If target land has BeastsPush up to 2 Explorer 
+
+
+
+Minor
+Absorb Corruption
+1
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements SunElements EarthElements Plant]
+Gather 1 Blight or Pay 1 Energy to remove 1 Blight If you have 2 Plant: You may do both 
+
+
+
+Minor
+Animated Wrackroot
+0
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements MoonElements FireElements Plant]
+1 Fear Destroy 1 Explorer or Add 1 Wilds 
+
+
+
+Minor
+Promises of Protection
+0
+Speed Fast
+Source SacredSite
+2
+LandAny
+[Elements SunElements EarthElements Animal]
+Gather up to 2 Dahan Dahan have +2 Health while in target land 
+
+
+
+Minor
+Call to Ferocity
+0
+Speed Slow
+Source Presence
+1
+TargetProperty Invaders
+[Elements SunElements FireElements Earth]
+Gather up to 3 Dahan or If target land has Dahan1 Fear and Push 1 Explorer and 1 Town 
+
+
+
+Minor
+Call to Trade
+1
+Speed Fast
+Source Presence
+2
+TargetProperty Dahan
+[Elements AirElements WaterElements EarthElements Plant]
+You may Gather 1 Dahan If the Terror Level is 2 or lowerGather 1 Town and the first Ravage in target land this turn becomes a Build there instead 
+
+
+
+Minor
+Confounding Mists
+1
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements AirElements Water]
+Defend 4 or Each Invader added to target land this turn may be immediately Pushed to any adjacent land 
+
+
+
+Minor
+Cycles of Time and Tide
+1
+Speed Fast
+Source Presence
+1
+[Land Coastal]
+[Elements SunElements MoonElements Water]
+If there are Dahanadd 1 Dahan If there are no Dahanremove 1 Blight 
+
+
+
+Minor
+Disorienting Landscape
+1
+Speed Fast
+Source SacredSite
+2
+LandAny
+[Elements MoonElements AirElements Plant]
+Push 1 Explorer If target land is M/Jadd 1 Wilds 
+
+
+
+Minor
+Elusive Ambushes
+1
+Speed Fast
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements FireElements Water]
+1 Damage or Defend 4 
+
+
+
+Minor
+Tormenting Rotflies
+1
+Speed Slow
+Source Presence
+2
+[Land SandLand Wetland]
+[Elements AirElements PlantElements Animal]
+Add 1 Disease or If target land has Invaders2 Fear If Disease is present+1 Fear If Blight is present+1 Fear 
+
+
+
+Minor
+Twilight Fog brings Madness
+0
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements SunElements MoonElements AirElements Water]
+Add 1 Strife Push 1 Dahan Each remaining Dahan takes 1 Damage 
+
+
+
+Minor
+Teeming Rivers
+1
+Speed Slow
+Source SacredSite
+2
+[Land MountainLand Wetland]
+[Elements SunElements WaterElements PlantElements Animal]
+If target land has no Blightadd 1 Beasts If target land has exactly 1 Blightremove it 
+
+
+
+nonsense
+
+
+

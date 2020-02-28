@@ -1,0 +1,512 @@
+
+
+
+Major
+Accelerated Rot
+4
+Speed Slow
+Source Presence
+2
+[Land JungleLand Wetland]
+[Elements SunElements WaterElements Plant]
+2 Fear 4 Damage If you have 3 Sun2 Water3 Plant: +5 Damage Remove 1 Blight 
+
+
+
+Major
+Cleansing Floods
+5
+Speed Slow
+Source Presence
+1
+[Land Wetland]
+LandAny
+[Elements SunElements Water]
+4 Damage Remove 1 Blight If you have 4 Water: +10 Damage 
+
+
+
+Major
+Pillar of Living Flame
+5
+Speed Slow
+Source SacredSite
+2
+LandAny
+[Elements Fire]
+3 Fear 5 Damage If target land is J/Wadd 1 Blight If you have 4 Fire: +2 Fear and +5 Damage 
+
+
+
+Major
+Poisoned Land
+3
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements EarthElements PlantElements Animal]
+1 Fear 7 Damage Add 1 Blight and destroy all Dahan If you have 3 Earth2 Plant2 Animal: Per Blight+1 Fear and +4 Damage 
+
+
+
+Major
+Terrifying Nightmares
+4
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements MoonElements Air]
+2 Fear Push up to 4 Explorer / Town If you have 4 Moon: +4 Fear 
+
+
+
+Major
+The Trees and Stones Speak of War
+2
+Speed Fast
+Source Presence
+1
+TargetProperty Dahan
+[Elements SunElements EarthElements Plant]
+1 Damage and Defend 2 per Dahan in target land If you have 2 Sun2 Earth2 Plant: You may Push up to 2 Dahanmoving the Defend effect with them
+
+
+
+Major
+Entwined Power
+2
+Speed Fast
+null
+TargetSpirit Another
+[Elements MoonElements WaterElements Plant]
+You and target Spirit may use each other's Presence to target Powers Target Spirit gains a Power Card You take one of the power Cards they did not keep If you have 2 Water4 Plant: You and target Spirit each gain 3 Energy and may gift each other 1 Power from hand 
+
+
+
+Major
+Paralyzing Fright
+4
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements AirElements Earth]
+4 Fear Invaders skip all Actions in target land this turn If you have 2 Air3 Earth: +4 Fear 
+
+
+
+Major
+Powerstorm
+3
+Speed Fast
+null
+TargetSpirit Any
+[Elements SunElements FireElements Air]
+Target Spirit gains 3 Energy Once this turntarget may Repeat a Power Card by paying its cost again If you have 2 Sun2 Fire3 Air: Target may repeat up to 3 total Power Cards by paying their costs 
+
+
+
+Major
+Talons of Lightning
+6
+Speed Fast
+Source Presence
+1
+[Land MountainLand Wetland]
+[Elements FireElements Air]
+3 Fear 5 Damage If you have 3 Fire3 Air: Destroy 1 Town in each adjacent land Increase this power's Range to 3 Range 
+
+
+
+Major
+The Jungle Hungers
+3
+Speed Slow
+Source Presence
+1
+[Land Jungle]
+LandAny
+[Elements MoonElements Plant]
+Destroy all Explorer and all Town Destroy all Dahan If you have 2 Moon3 Plant: Destroy 1 City Do not destroy any Dahan 
+
+
+
+Major
+The land Thrashes in Furious Pain
+4
+Speed Slow
+Source Presence
+2
+TargetProperty Blight
+[Elements MoonElements FireElements Earth]
+2 Damage per Blight in target land +1 Damage per Blight in adjacent lands If you have 3 Moon3 Earth: Repeat on an adjacent land 
+
+
+
+Major
+Tsunami
+6
+Speed Slow
+Source SacredSite
+2
+Land Coastal
+[Elements WaterElements Earth]
+2 Fear 8 Damage Destroy 2 Dahan If you have 3 Water2 Earth: +1 Fear4 Damage and Destroy 1 Dahan in each other Coastal land on the same board 
+
+
+
+Major
+Vigor of the Breaking Dawn
+3
+Speed Fast
+Source Presence
+2
+TargetProperty Dahan
+[Elements SunElements Animal]
+2 Damage per Dahan in target land If you have 3 Sun2 Animal: You may Push up to 2 Dahan In lands you Pushed Dahan to2 Damage per Dahan 
+
+
+
+Major
+Vengeance of the Dead
+3
+Speed Fast
+Source Presence
+3
+LandAny
+[Elements MoonElements FireElements Animal]
+3 Fear After each effect that destroys Town / City / Dahan in target land1 Damage per Town / City / Dahan destroyed If you have 3 Animal: Damage from this Power may be dealt into adjacent lands 
+
+
+
+Major
+Wrap in Wings of Sunlight
+3
+Speed Fast
+Source Presence
+0
+LandAny
+[Elements SunElements AirElements Animal]
+Move up to 5 Dahan from target land to any land Defend 5 in that land If you have 2 Sun2 Air2 Animal: FirstGather up to 3 Dahan 
+
+
+
+Major
+Blazing Real
+5
+Speed Fast
+null
+TargetSpirit Any
+[Elements FireElements EarthElements Plant]
+Target Spirit places 2 of their destroyed Presence into a single landup to 2 Range from your Presence If any Presence was returned2 damage to each Town / City in that land If you have 3 Fire3 Earth2 Plant: 4 Damage 
+
+
+
+Major
+Winds of Rust and Atrophy
+3
+Speed Fast
+Source SacredSite
+3
+LandAny
+[Elements AirElements WaterElements Animal]
+1 Fear and Defend 6 Replace 1 City with 1 Town or 1 Town with 1 Explorer If you have 3 Air3 Water2 Animal: Repeat this Power 
+
+
+
+Major
+Indomitable Claim
+4
+Speed Fast
+Source Presence
+1
+LandAny
+[Elements SunElements Earth]
+Add 1 Presence in target land even if you normally could not due to land type Defend 20 If you have 2 Sun3 Earth: 3 Fear if Invaders are present Invaders skip all Actions in target land this turn 
+
+
+
+Major
+Mists of Oblivion
+4
+Speed Slow
+Source Presence
+3
+LandAny
+[Elements MoonElements AirElements Water]
+1 Damage to each Invader in target land 1 Fear per Town / City destroyed by this Powerto a maximum of 4 If you have 2 Moon3 Air2 Water: +3 Damage 
+
+
+
+Major
+Infinite Vitality
+3
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements EarthElements PlantElements Animal]
+Dahan have +4 Health while in target land Whenever Blight would be added to target landinstead leave it on the card If you have 4 Earth: Dahan ignore Damage and Destruction effects Remove 1 Blight from target or adjacent land 
+
+
+
+Major
+Dissolve the Bonds of Kinship
+4
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements FireElements WaterElements Animal]
+Replace 1 City with 2 Explorer Replace 1 Town with 1 Explorer Replace 1 Dahan with 1 Explorer Push all Explorer from target land to as many different lands as possible If you have 2 Fire2 Water3 Animal: Before PushingExplorer and Town / City do Damage to each other 
+
+
+
+Major
+Strangling Firevine
+4
+Speed Slow
+Source Presence
+1
+[Land Sand]
+LandAny
+[Elements FireElements Plant]
+Destroy all Explorer Add 1 Wilds Add 1 Wilds in the originating Sands 1 Damage per Wilds in / adjacent to target land If you have 2 Fire3 Plant: +1 Damage per Wilds in / adjacent to target land 
+
+
+
+Major
+Bloodwrack Plague
+4
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements WaterElements EarthElements Animal]
+Add 2 Disease For each Disease in target landDefend 1 in target and all adjacent lands If you have 2 Earth4 Animal: 2 Fear For each Disease in target land do 1 Damage in target or an adjacent land 
+
+
+
+Major
+Cast down into the Briny Deep
+9
+Speed Slow
+Source SacredSite
+1
+[Land Coastal]
+[Elements SunElements MoonElements WaterElements Earth]
+6 Fear Destroy all Invaders If you have 2 Sun2 Moon4 Water4 Earth: Destroy the board containing target land and everything on that board All destroyed Blight is removed from the game instead of being returned to the Blight Card 
+
+
+
+Major
+Death Falls Gently from Open Blossoms
+4
+Speed Slow
+Source Presence
+3
+[Land JungleLand Sand]
+[Elements MoonElements AirElements Plant]
+4 Damage If any Invaders remainadd 1 Disease If you have 3 Air3 Plant: 3 Fear Add 1 Disease to 2 adjacent lands with Invaders 
+
+
+
+Major
+Fire and Flood
+7
+Speed Slow
+Source SacredSite
+[12]
+LandAny
+[Elements SunElements FireElements Water]
+4 Damage in each target land Range must be measured from the same SacredSite If you have 3 Fire: +4 Damage in either target land 3 Water: +4 Damage in either target land 
+
+
+
+Major
+Grant Hatred a Ravenous Form
+4
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements MoonElements Fire]
+For each Strife / Blight in target land1 Fear and 2 Damage If this destroys all invaders in target landadd 1 Beasts If you have 4 Moon2 Fire: Add 1 Strife in up to 3 adjacent lands 
+
+
+
+Major
+Insatiable Hunger of the Swarm
+4
+Speed Fast
+Source SacredSite
+2
+LandAny
+[Elements AirElements PlantElements Animal]
+Add 1 Blight Add 2 Beasts Gather up to 2 Beasts Each Beasts does 1 Fear2 Damage to Invaders and 2 Damage to Dahan Destroy 1 Beasts If you have 2 Air4 Animal: Repeat this Power on an adjacent land 
+
+
+
+Major
+Instruments of their own Ruin
+4
+Speed Fast
+Source SacredSite
+1
+LandAny
+[Elements SunElements FireElements AirElements Animal]
+Add 1 Strife Each Invader with Strife deals Damage to other Invaders in target land If you have 4 Sun2 Fire2 Animal: Insteadif Invaders Ravage in target landthey damage Invaders in adjacent lands instead of Dahan and the land Dahan in target land do not fight back 
+
+
+
+Major
+Flow like WaterReach like Air
+2
+Speed Fast
+null
+TargetSpirit Any
+[Elements AirElements Water]
+Target Spirit gets +2 Range with all Powers Target Spirit may Push 1 of their Presence to an adjacent landbringing up to 2 Explorer2 Town and 2 Dahan along with it If you have 2 Air2 Water: The moved Presence may also bring along up to 2 City and up to 2 Blight 
+
+
+
+Major
+PentUp Calamity
+3
+Speed Fast
+Source Presence
+2
+LandAny
+[Elements MoonElements FireElements EarthElements PlantElements Animal]
+Add 1 Disease and 1 Strife or Remove any number of Beasts / Disease / Strife / Wilds For each token removed1 Fear and 3 Damage If you have 2 Moon3 Fire: If you have removed tokensreturn up to 2 of them Otherwiseadd 2 Strife 
+
+
+
+Major
+Pyroclastic Flow
+3
+Speed Fast
+Source Presence
+1
+[Land Mountain]
+LandAny
+[Elements FireElements AirElements Earth]
+2 Damage Destroy all Explorer If target land is J/Wadd 1 Blight If you have 3 Air2 Fire2 Earth: +4 Damage Add 1 Wilds 
+
+
+
+Major
+Savage Transformation
+2
+Speed Slow
+Source Presence
+1
+LandAny
+[Elements MoonElements Animal]
+2 Fear Replace 1 Explorer with 1 Beasts If you have 3 Animal2 Moon: Replace 1 additional Explorer with 1 Beasts in either target or adjacent land 
+
+
+
+Major
+Sea Monsters
+5
+Speed Slow
+Source Presence
+1
+[Land CoastalLand Wetland]
+[Elements WaterElements Animal]
+Add 1 Beasts Per Beasts2 Fear and 3 Damage Per Blight1 Damage If you have 3 Water3 Animal: Repeat this power 
+
+
+
+Major
+Tigers Hunting
+2
+Speed Fast
+Source Presence
+1
+[Land Jungle]
+TargetProperty NoBlight
+[Elements SunElements MoonElements Animal]
+2 Fear Add 1 Beasts Gather up to 1 Beasts 1 Damage per Beasts Push up to 2 Beasts If you have 2 Sun2 Moon3 Animal: 1 Damage in an adjacent land without Blightand +1 Damage per Beasts there 
+
+
+
+Major
+Unrelenting Growth
+4
+Speed Slow
+null
+TargetSpirit Any
+[Elements SunElements FireElements WaterElements Plant]
+Target Spirit adds 2 Presence and 1 Wilds to a land at 1 Range If you have 3 Sun3 Plant: In that landadd 1 additional Wilds and remove 1 Blight Target Spirit gains a Power Card 
+
+
+
+Major
+Volcanic Eruption
+8
+Speed Slow
+Source Presence
+1
+[Land Mountain]
+LandAny
+[Elements FireElements Earth]
+6 Fear 20 Damage Destroy all Dahan and Beasts Add 1 Blight If you have 4 Fire3 Earth: Destroy all Invaders Add 1 Wilds In each adjacent land: 10 Damage Destroy all Dahan and Beasts If there are no Blightadd 1 Blight 
+
+
+
+Major
+Sweep into the Sea
+4
+Speed Slow
+Source Presence
+2
+LandAny
+[Elements SunElements AirElements Water]
+Push all Explorer and Town one land towards the nearest Ocean or If target land is Coastaldestroy all Explorer and Town If you have 3 Sun2 Water: Repeat on an adjacent land 
+
+
+
+Major
+Manifest Incarnation
+6
+Speed Slow
+Source Presence
+0
+TargetProperty City
+[Elements SunElements MoonElements EarthElements Animal]
+6 Fear +1 Fear for each Town / City and for each of your Presence in target land Remove 1 City1 Town and 1 Explorer Then Invaders in target land Ravage If you have 3 Sun3 Moon: +3 Fear Invaders do 6 Damage on their Ravage 
+
+
+
+Major
+Smothering Infestation
+3
+Speed Slow
+Source Presence
+0
+LandAny
+[Elements WaterElements Plant]
+Add 1 Disease If target land is J/W2 Fear and 3 Damage If you have 2 Plant2 Water: 1 Damage to each Invader 
+
+
+
+Major
+Twisted Flowers Murmur Ultimatums
+5
+Speed Slow
+Source SacredSite
+1
+TargetProperty Invaders
+[Elements SunElements MoonElements AirElements EarthElements Plant]
+4 Fear Add 1 Strife If the Terror Level is 2 or higherremove 2 Invaders If you have 3 Moon2 Air3 Plant: +3 Fearbefore the Terror Level check 3 Damage 
+
+
+
+nonsense
+
+
+

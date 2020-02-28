@@ -1,7 +1,8 @@
-package parser;
+package JsonStuff;
 
 import java.util.ArrayList;
-
+import parser.*;
+import com.google.gson.*;
 public class StringToDataForCards {
 	String cardType;
 	String name;
@@ -49,6 +50,33 @@ public class StringToDataForCards {
 		
 	}
 	
+	public String getCardType() {
+		return cardType;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getCost() {
+		return cost;
+	}
+	public int getRange() {
+		return range;
+	}
+	public String getSpeed() {
+		return speed;
+	}
+	public String getSource() {
+		return source;
+	}
+	public String getTargetType() {
+		return targetType;
+	}
+	public String getElementsGained() {
+		return elementsGained;
+	}
+	public String getCardText() {
+		return cardText;
+	}
 	public String toString() {
 		String returnString = cardType+ "\n" +
 				name+"\n" +cost+"\n" +range+"\n" +speed+"\n" +source+"\n" +targetType+"\n" +"\n" +cardText;
