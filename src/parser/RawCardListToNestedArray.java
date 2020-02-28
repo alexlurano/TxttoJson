@@ -1,28 +1,53 @@
 package parser;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+ *  Method Call order:
+ *  createJsonFIle : outside call
+ *  beautify
+ *  	deletecpprelics
+ *  	parseoutcommas
+ *  	combineinfoinbrackets
+ * 
+ * 
+ */
 public class RawCardListToNestedArray {
 	ArrayList<String> rawCards = new ArrayList<String>();
 	ArrayList<StringToDataForCards> cleanCardInfo = new ArrayList<StringToDataForCards>();
-	
+
+	TextDocWriter w = new TextDocWriter();
 	
 
 	private void printJob(String args) { System.out.println(args); }
+	private void printArray(ArrayList<String> args) {
+		args.forEach((thingy) -> System.out.println(thingy + ""));
+	}
+	private void printFile(ArrayList<String> args, boolean printNow) {
+		String projLoc = System.getProperty("user.dir") + "\\src\\data\\" + "outputTest.txt";
+		w.addInfoToWrite(args);
+		if(printNow)
+			w.writeListToFile(projLoc);
+	}
 	public RawCardListToNestedArray() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	public void createJsonFile(ArrayList<String> rawCardInfo) {
 		rawCards = rawCardInfo;
+		int index = rawCards.size();
+		ArrayList<String> emptyTemp = new ArrayList<String>();
+		emptyTemp.add("nonsense");
+		index = 2;
+		for(int i=0;i<index;i++) {
 
-		beautify(rawCards.get(1),1);
-		beautify(rawCards.get(2),2);
-//		for(int i=0;i<rawCards.size();i++) {
-//			beautify(rawCards.get(i),i);
-//		}
+			cleanCardInfo.add(new StringToDataForCards());
+			cleanCardInfo.get(i).assignValues(beautify(rawCards.get(i),i));
+		}
+
+		printFile(emptyTemp,true);
 	}
 	
 	
@@ -34,16 +59,21 @@ public class RawCardListToNestedArray {
 	
 	
 	//------------------------------------------------------------------------------
-	private void beautify(String rawInfo,int cardNum) {
+	private ArrayList<String> beautify(String rawInfo,int cardNum) {
 
 		ArrayList<String> dicedCardInfo = new ArrayList<String>();
 		ArrayList<String> completeCardInfo = new ArrayList<String>();
 		String s = rawInfo;
 		s = deleteCppRelics(s);
 		dicedCardInfo = parseOutCommas(s);
-		dicedCardInfo.forEach((thingy) -> System.out.println(thingy));
-		completeCardInfo = combineInfoInBrackets(dicedCardInfo);
-		cleanCardInfo.add(new StringToDataForCards(s));
+		completeCardInfo = combineInfoInBrackets(dicedCardInfo,'[',']');
+		completeCardInfo = combineInfoInBrackets(completeCardInfo,'"','"');
+		completeCardInfo = removeQuotes(completeCardInfo);
+		completeCardInfo.add(0, s);
+
+		completeCardInfo.add(completeCardInfo.size()+"long");
+		printFile(completeCardInfo,false);
+		return completeCardInfo;
 		// send our parsed array of strings to be converted to primitive types.
 		
 		
@@ -52,14 +82,25 @@ public class RawCardListToNestedArray {
 
 	}
 	
+	private ArrayList<String> removeQuotes(ArrayList<String> args) {
+		ArrayList<String> bargs = new ArrayList<String>();
+		bargs = args;
+		for(int i = 0;i<bargs.size();i++) {
+			bargs.set(i, args.get(i).replaceAll("\"", ""));
+		}
+			
+		return bargs;
+	}
 	private String deleteCppRelics(String uglyDuckling) {
 		String gorgeousSwan = uglyDuckling;
-
         gorgeousSwan = gorgeousSwan.replaceAll("[a-zA-Z]*?\\(", ""); // delete cpp class calls
         gorgeousSwan = gorgeousSwan.replaceAll("\\s{2,}", ""); // deletes excessive whitespace
         gorgeousSwan = gorgeousSwan.replaceAll("ProductSet..+?(,.)", "");// deletes ProductSet.whatever and the comma
         gorgeousSwan = gorgeousSwan.replaceAll("PowerDeckType.", ""); //leaves either just minor,major,or spirit
-        gorgeousSwan = gorgeousSwan.replaceAll("\"", "");	// gets rid of quotes
+        
+
+        gorgeousSwan = gorgeousSwan.replaceAll("-", "");
+        gorgeousSwan = gorgeousSwan.replaceAll("\\.", " ");
         gorgeousSwan = gorgeousSwan.replaceAll("\\)", "");
         gorgeousSwan = gorgeousSwan.replaceAll("new", "");
         gorgeousSwan = gorgeousSwan.replaceAll("\\s{2,}", " ");
@@ -91,6 +132,7 @@ public class RawCardListToNestedArray {
 				String leftToParse = s;
 				String myFoundString = m.group();
 				myFoundString = myFoundString.replaceAll(",", "");
+				myFoundString = myFoundString.strip();
 				stuffToAdd.add(myFoundString);
 				myFoundString = "";
 				s = leftToParse;
@@ -107,42 +149,62 @@ public class RawCardListToNestedArray {
 		
 	}
 	
-	private ArrayList<String> combineInfoInBrackets(ArrayList<String> args) {
+	private ArrayList<String> combineInfoInBrackets(ArrayList<String> args,char leftBracket,char rightBracket) {
 		ArrayList<String> uglyDataArr = new ArrayList<String>();
-		ArrayList<String> correctDataArr = new ArrayList<String>();
+		ArrayList<Integer> removeSpots = new ArrayList<Integer>();
+		ArrayList<String> cleanDataArr = new ArrayList<String>();
 		uglyDataArr = args;
+		cleanDataArr = args;
+		
 		for(int i=0;i<uglyDataArr.size();i++) {
 			String uglyStuff;
 			String cleanElement;
 			uglyStuff = uglyDataArr.get(i);
-			//printJob(uglyStuff);
-			if(uglyStuff.charAt(0) == '[') {
-				printJob(uglyStuff);
+
+			if((uglyStuff.charAt(0) == leftBracket) && (uglyStuff.charAt(uglyStuff.length()-1) != rightBracket)) {
 				cleanElement = uglyStuff;
-				uglyDataArr.remove(i);
+//				uglyDataArr.remove(i);
+				removeSpots.add(i);
+				i++;
 				uglyStuff = uglyDataArr.get(i);
-				printJob("found" + uglyStuff.charAt(uglyStuff.length()-1));
-				if(uglyStuff.charAt(uglyStuff.length()-1) == ']') {
+
+				boolean loopCheck = true;
+				while((loopCheck) && (uglyDataArr.size() > i)){
+						
 					cleanElement += uglyStuff;
-					printJob(cleanElement);
-					uglyDataArr.remove(i);
-					uglyStuff = uglyDataArr.get(i);
-				} else {
-					while(uglyStuff.charAt(uglyStuff.length()-1) != ']' && uglyDataArr.size() < i){
-						
-						cleanElement += uglyStuff;
-						printJob(cleanElement);
-						uglyDataArr.remove(i);
+					if((uglyStuff.charAt(uglyStuff.length()-1)) == rightBracket)
+						loopCheck = false;
+
+//					uglyDataArr.remove(i);
+					removeSpots.add(i);
+					i++;
+					if(uglyDataArr.size() > i)
 						uglyStuff = uglyDataArr.get(i);
-						
+					else {
+						i--;
+						printJob(uglyDataArr.get(i));
 					}
+						
 				}
-				
+				int shrinkCounter = 0; // hack to avoid for looping all removespots to correspond to thenew size of cleanDataArr
+				for(int a=0;a<removeSpots.size();a++) {
+
+					int index = removeSpots.get(a) + shrinkCounter;
+					printJob(cleanDataArr.get(index)+"removingj");
+					cleanDataArr.remove(index);
+					shrinkCounter--;
+					
+
+				}
+
+				cleanDataArr.add(removeSpots.get(0), cleanElement);
+				removeSpots.clear();
 			}
+			
 			
 				
 		}
-		return correctDataArr;
+		return cleanDataArr;
 		
 		
 	}

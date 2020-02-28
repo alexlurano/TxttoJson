@@ -16,6 +16,8 @@ public class StartHere {
 		RawCardListToNestedArray makeInfoPretty = new RawCardListToNestedArray();
 		makeInfoPretty.createJsonFile(makeCleanInfo.getCardArray());
 		
+		
+		
 	}
 
 }

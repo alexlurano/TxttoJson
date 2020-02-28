@@ -1,0 +1,35 @@
+ Minor, "Savage Mawbeasts", 0, Speed Slow, Source SacredSite, 1, LandAny,[Elements Fire, Elements Animal], "Cari Corene","If target land is J/W, 1 Fear and 1 Damage If you have 3 Animal: 1 Damage ",k
+Minor
+Savage Mawbeasts
+0
+Speed Slow
+Source SacredSite
+1
+LandAny
+[Elements FireElements Animal]
+Cari Corene
+If target land is J/W1 Fear and 1 Damage If you have 3 Animal: 1 Damage 
+11long
+
+
+
+ Minor, "Voracious Growth", 1, Speed Slow, Source SacredSite, 1, [Land Jungle, Land Wetland],[Elements Water, Elements Plant], "Cari Corene","2 Damage or Remove 1 Blight ",k
+Minor
+Voracious Growth
+1
+Speed Slow
+Source SacredSite
+1
+[Land JungleLand Wetland]
+[Elements Water
+Elements Plant]
+Cari Corene
+2 Damage or Remove 1 Blight 
+12long
+
+
+
+nonsense
+
+
+
